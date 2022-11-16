@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HiLoCardGameApp</string>
+    <string name="welcome_to_hi_lo"><![CDATA[WELCOME TO HI&LO]]></string>
+    <string name="start">Start</string>
+    <string name="points">Points</string>
+</resources>
