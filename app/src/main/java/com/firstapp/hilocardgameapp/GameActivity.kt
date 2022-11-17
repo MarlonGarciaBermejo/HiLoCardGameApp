@@ -14,7 +14,11 @@ class GameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game_activity)
 
+
         showNumber = findViewById(R.id.showNumberView)
+        
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+          //Back button to go back to main menu(activity 1)
 
     }
 }
