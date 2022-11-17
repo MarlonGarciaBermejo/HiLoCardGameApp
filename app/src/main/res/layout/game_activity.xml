@@ -13,9 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginBottom="230dp"
         android:background="@color/MilitaryGreen"
-        android:text="H"
+        android:text="@string/H"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/higherButton"
@@ -29,9 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="250dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginBottom="230dp"
         android:background="@color/Red"
-        android:text="L"
+        android:text="@string/L"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,22 +45,49 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="200dp"
-        android:text="Score streak:"
+        android:layout_marginBottom="160dp"
+        android:text="@string/Score_streak"
         android:textColor="@color/DarkGrey"
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/showNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="number"
+        android:textColor="#0B0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <ImageView
+        android:id="@+id/aceOfSpades"
+        android:layout_width="390dp"
+        android:layout_height="318dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229"
+        app:srcCompat="@drawable/ace_of_spades2"
+        android:contentDescription="@string/TODO" />
+
     <ImageView
         android:id="@+id/arrowUpDown"
         android:layout_width="99dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/scoreStreak"
         app:layout_constraintEnd_toStartOf="@+id/lowerButton"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toEndOf="@+id/higherButton"
-        app:srcCompat="@drawable/arrowupdown" />
+        app:srcCompat="@drawable/arrowupdown"
+        android:contentDescription="@string/Todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/WhiteGrey"
     android:layout_height="match_parent"
+    android:background="@color/WhiteGrey"
     tools:context=".MainActivity">
 
     <Button
@@ -12,16 +12,18 @@
         android:layout_width="179dp"
         android:layout_height="65dp"
         android:layout_marginTop="70dp"
+        android:layout_marginBottom="256dp"
         android:background="@color/MilitaryGreen"
         android:contentDescription="@string/app_name"
         android:fontFamily="sans-serif-medium"
         android:text="@string/start"
         android:textColor="@color/WhiteGrey"
         android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeButton"
-        />
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/pointsButton"
@@ -34,20 +36,23 @@
         android:text="@string/points"
         android:textColor="@color/WhiteGrey"
         android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startButton"
-         />
+        app:layout_constraintVertical_bias="0.111" />
 
-     <ImageView
+    <ImageView
         android:id="@+id/imageView"
-        android:layout_width="373dp"
-        android:layout_height="432dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/logo"
+        android:layout_width="240dp"
+        android:layout_height="313dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hilologo" />
+        app:layout_constraintVertical_bias="0.088"
+        app:srcCompat="@drawable/hilologo"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
