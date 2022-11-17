@@ -12,26 +12,55 @@
         android:id="@+id/higherButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="284dp"
         android:background="@color/MilitaryGreen"
         android:text="H"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/higherButton2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/higherButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling" />
 
     <Button
         android:id="@+id/lowerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="284dp"
         android:background="@color/Red"
         android:text="L"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/lowerButton" />
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toEndOf="@+id/lowerButton"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/scoreStreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="200dp"
+        android:text="Score streak:"
+        android:textColor="@color/DarkGrey"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrowUpDown"
+        android:layout_width="99dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreStreak"
+        app:layout_constraintEnd_toStartOf="@+id/lowerButton"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toEndOf="@+id/higherButton"
+        app:srcCompat="@drawable/arrowupdown" />
 </androidx.constraintlayout.widget.ConstraintLayout>
