@@ -22,4 +22,5 @@
     <string name="gameRules">Rules are simple. A card will appear on the screen, simply guess if you think the next card after that will be a higher card or a lower card, if you guess right you will then earn a point in the streak. If not then the streak will either reset to 0 depending on how many points you had or it will remain at 0 streak. The more right you have the more points you will earn!</string>
     <string name="rules">RULES</string>
     <string name="have_fun">Have fun!</string>
+    <string name="todo4">TODO</string>
 </resources>
