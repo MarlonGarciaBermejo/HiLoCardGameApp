@@ -15,6 +15,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginBottom="230dp"
         android:background="@color/MilitaryGreen"
+        android:fontFamily="sans-serif-light"
         android:text="@string/H"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,7 +47,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="160dp"
-        android:text="@string/Score_streak"
+        android:text="@string/ScoreStreak"
         android:textColor="@color/DarkGrey"
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +58,7 @@
         android:id="@+id/showNumberView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="number"
+        android:text="@string/number"
         android:textColor="#0B0B0B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,17 +78,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.229"
         app:srcCompat="@drawable/ace_of_spades2"
-        android:contentDescription="@string/TODO" />
+        android:contentDescription="@string/TODO"/>
 
     <ImageView
         android:id="@+id/arrowUpDown"
         android:layout_width="99dp"
         android:layout_height="78dp"
         android:layout_marginBottom="20dp"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toTopOf="@+id/scoreStreak"
         app:layout_constraintEnd_toStartOf="@+id/lowerButton"
         app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toEndOf="@+id/higherButton"
-        app:srcCompat="@drawable/arrowupdown"
-        android:contentDescription="@string/Todo" />
+
+        app:layout_constraintStart_toEndOf="@+id/higherButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
