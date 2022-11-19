@@ -1,57 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/MilitaryGreen">
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="75dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/todo3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gamerulesinfo"
-        android:contentDescription="@string/todo3" />
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/ace_of_spades2" />
 
     <TextView
         android:id="@+id/howToPlay"
         android:layout_width="225dp"
         android:layout_height="29dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:text="@string/how_do_i_play_this_game"
         android:textColor="#EFEBE9"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.004" />
 
     <TextView
         android:id="@+id/howToPlay2"
         android:layout_width="139dp"
         android:layout_height="55dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="408dp"
         android:text="@string/have_fun"
         android:textColor="#EFEBE9"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/infoText"
         android:layout_width="386dp"
         android:layout_height="276dp"
-        android:text="@string/rules_are_simple_a_card_will_appear_on_the_screen_simply_guess_if_you_think_the_next_card_after_that_will_be_a_higher_card_or_a_lower_card_if_you_guess_right_you_will_then_earn_a_point_in_the_streak_if_not_then_the_streak_will_either_reset_to_0_depending_on_how_many_points_you_had_or_it_will_remain_at_0_streak_the_more_right_you_have_the_more_points_you_will_earn"
+        android:text="@string/gameRules"
         android:textColor="#EFEBE9"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/howToPlay" />
+        app:layout_constraintTop_toBottomOf="@+id/howToPlay"
+        app:layout_constraintVertical_bias="0.304" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

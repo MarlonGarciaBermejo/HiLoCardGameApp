@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/startButton"
         app:layout_constraintVertical_bias="0.111" />
 
-    <ImageView
+    <ImageView      
         android:id="@+id/imageView"
         android:layout_width="350dp"
         android:layout_height="364dp"
@@ -52,8 +52,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.088"
+        app:srcCompat="@drawable/hilologo1"/>
         app:srcCompat="@drawable/hilologo1" />
-    
+  
     <Button
         android:id="@+id/rulesButton"
         android:layout_width="wrap_content"
