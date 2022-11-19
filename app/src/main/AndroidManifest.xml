@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiLoCardGameApp"
         tools:targetApi="31">
+        <activity
+            android:name=".InfoActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
         <activity 
             android:name=".GameActivity"
             android:exported="true"
