@@ -3,4 +3,22 @@
     <string name="welcome_to_hi_lo"><![CDATA[WELCOME TO HI&LO]]></string>
     <string name="start">Start</string>
     <string name="points">Points</string>
+    <string name="logo">Logo</string>
+    <string name="h">H</string>
+    <string name="l">L</string>
+    <string name="score_streak">Score streak:</string>
+    <string name="todo">TODO</string>
+    <string name="H">H</string>
+    <string name="L">L</string>
+    <string name="Score_streak">Score streak:</string>
+    <string name="Todo">TODO</string>
+    <string name="TODO">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo12">TODO</string>
+    <string name="how_do_i_play_this_game">How do I play this game?</string>
+    <string name="todo3">TODO</string>
+    <string name="rules_are_simple_a_card_will_appear_on_the_screen_simply_guess_if_you_think_the_next_card_after_that_will_be_a_higher_card_or_a_lower_card_if_you_guess_right_you_will_then_earn_a_point_in_the_streak_if_not_then_the_streak_will_either_reset_to_0_depending_on_how_many_points_you_had_or_it_will_remain_at_0_streak_the_more_right_you_have_the_more_points_you_will_earn">Rules are simple. A card will appear on the screen, simply guess if you think the next card after that will be a higher card or a lower card, if you guess right you will then earn a point in the streak. If not then the streak will either reset to 0 depending on how many points you had or it will remain at 0 streak. The more right you have the more points you will earn!</string>
+    <string name="rules">RULES</string>
+    <string name="have_fun">Have fun!</string>
 </resources>
