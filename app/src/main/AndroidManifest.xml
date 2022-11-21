@@ -13,6 +13,10 @@
         android:theme="@style/Theme.HiLoCardGameApp"
         tools:targetApi="31">
         <activity
+            android:name=".PointsActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".InfoActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity"/>
