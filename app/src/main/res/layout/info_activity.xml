@@ -8,16 +8,17 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="75dp"
-        android:layout_height="189dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:contentDescription="@string/todo3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042"
-        app:srcCompat="@drawable/ace_of_spades2" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gamerulesinfo" />
 
     <TextView
         android:id="@+id/howToPlay"
@@ -31,13 +32,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.004" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/howToPlay2"
         android:layout_width="139dp"
         android:layout_height="55dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginTop="308dp"
         android:text="@string/have_fun"
         android:textColor="#EFEBE9"
         android:textSize="30sp"
@@ -45,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/infoText"
@@ -56,9 +57,8 @@
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/howToPlay"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintVertical_bias="0.25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
