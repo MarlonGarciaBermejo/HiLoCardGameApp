@@ -67,7 +67,7 @@ class GameActivity : AppCompatActivity() {
         when (random) {
             1 -> showCard.setImageResource(R.drawable.ace_of_spades2)
             2 -> showCard.setImageResource(R.drawable.two_of_diamonds)
-            3 -> showCard.setImageResource(R.drawable.eight_of_clubs)
+            3 -> showCard.setImageResource(R.drawable.three_of_hearts)
             4 -> showCard.setImageResource(R.drawable.four_of_clubs)
             5 -> showCard.setImageResource(R.drawable.five_of_spades)
             6 -> showCard.setImageResource(R.drawable.six_of_diamonds)
