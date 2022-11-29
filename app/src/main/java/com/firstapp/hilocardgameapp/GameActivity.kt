@@ -70,7 +70,7 @@ class GameActivity : AppCompatActivity() {
 
     private fun drawCard(): Int {
         val random = (1..13).random()
-        val showCard: ImageView = findViewById(R.id.cardBackSide)
+        val showCard: ImageView = findViewById(R.id.cardBackSide)               // Random draw function for card deck
         when (random) {
             1 -> showCard.setImageResource(R.drawable.ace_of_spades2)
             2 -> showCard.setImageResource(R.drawable.two_of_diamonds)
