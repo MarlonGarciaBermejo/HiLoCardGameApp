@@ -44,15 +44,34 @@
         app:layout_constraintVertical_bias="0.721"
         tools:ignore="NotSibling" />
 
+    <Button
+        android:id="@+id/pointsButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@color/Red"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/points"
+        android:textColor="@color/WhiteGrey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startGameButton" />
+
     <TextView
         android:id="@+id/scoreStreak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:text="@string/ScoreStreak"
+        android:layout_marginBottom="180dp"
+        android:text="0"
         android:textColor="@color/DarkGrey"
         android:textSize="23sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -60,21 +79,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.844" />
 
-    <TextView
-        android:id="@+id/showNumberView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/number"
-        android:textColor="#0B0B0B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124" />
-
     <ImageView
-        android:id="@+id/aceOfSpades"
+        android:id="@+id/cardBackSide"
         android:layout_width="390dp"
         android:layout_height="318dp"
         android:contentDescription="@string/TODO"
@@ -84,21 +90,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.191"
-        app:srcCompat="@drawable/ace_of_spades2" />
+        app:srcCompat="@drawable/cardbackside" />
 
     <ImageView
         android:id="@+id/arrowUpDown"
         android:layout_width="99dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="20dp"
         android:contentDescription="@string/app_name"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/scoreStreak"
+        app:layout_constraintBottom_toTopOf="@+id/pointsButton"
         app:layout_constraintEnd_toStartOf="@+id/lowerButton"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toEndOf="@+id/higherButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971"
+        app:layout_constraintTop_toBottomOf="@+id/scoreStreak"
         app:srcCompat="@drawable/arrowupdown" />
 
     <Button
@@ -115,5 +119,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.754" />
+
+    <TextView
+        android:id="@+id/highScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScoreStreak:"
+        android:textColor="@color/DarkGrey"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
