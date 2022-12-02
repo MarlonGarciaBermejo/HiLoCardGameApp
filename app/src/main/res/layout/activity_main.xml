@@ -24,23 +24,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <Button
-        android:id="@+id/pointsButton"
-        android:layout_width="179dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="-50dp"
-        android:background="@color/DarkGrey"
-        android:contentDescription="@string/app_name"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/points"
-        android:textColor="@color/WhiteGrey"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startButton"
-        app:layout_constraintVertical_bias="0.111" />
-
     <ImageView      
         android:id="@+id/imageView"
         android:layout_width="350dp"
@@ -56,14 +39,17 @@
 
     <Button
         android:id="@+id/rulesButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="310dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="179dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/DarkGrey"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/rules"
-        android:textSize="17sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
