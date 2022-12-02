@@ -26,4 +26,5 @@
     <string name="Player">Name</string>
     <string name="HighScore">Score</string>
     <string name="startGameButton">START</string>
+    <string name="highest_score_10">Highest Score: 10</string>
 </resources>
