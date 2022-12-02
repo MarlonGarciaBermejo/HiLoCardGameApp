@@ -1,28 +1,39 @@
 package com.firstapp.hilocardgameapp
 
+
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+
+
 
 class PointsActivity : AppCompatActivity() {
 
-    val player = mutableListOf<Player>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.points_activity)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.scoreRecyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        val sharedPref = getSharedPreferences("game", Context.MODE_PRIVATE)
+        val textView = findViewById<TextView>(R.id.scoreStreak)
 
-        val adapter = PlayerRecyclerAdapter(this, player)
-        recyclerView.adapter = adapter
+        val playButton = findViewById<Button>(R.id.playAgainButton)
+        playButton.setOnClickListener {
+            val intent1 = Intent(this, GameActivity::class.java)
+            startActivity(intent1)
+        }
+        val exitButton = findViewById<Button>(R.id.exitButton)
+        exitButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        val hiScore = sharedPref.getInt("hiscore", 0)
+        textView.text = hiScore.toString()
+
+
     }
-
-
 }
